@@ -1,4 +1,4 @@
-hellomake: serial.c
+hellomake: main.c
 	avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o main.o main.c
 	avr-gcc -Os -DF_CPU=16000000UL -mmcu=atmega328p -c -o serial.o serial.c
 	avr-gcc -mmcu=atmega328p main.o serial.o -o main
